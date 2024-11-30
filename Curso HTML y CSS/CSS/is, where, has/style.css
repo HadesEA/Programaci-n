@@ -1,0 +1,38 @@
+/* modificamos los elementos con las clases e1, e2, e3 que se encuentren dentro de section */
+section .e1, 
+section .e2,
+section .e3{
+    color: red;
+}
+/* modifica los elementos con las clases e1, e2, e3 que se encuentren dentro de section */
+section :is(.e1, .e2, .e3){
+    color: blue;
+}
+
+/* section:has(.e1){
+    background-color: #333;
+} */
+/* en caso de que a ul le siga un div modificamos el div */
+ul + div{
+    background-color: #000;
+}
+/* En caso de que a ul le siga un div modificamos el ul */
+ul:has(+div){
+    background-color: #004;
+}
+
+div{
+    padding: 20px;
+}
+
+label{
+    font-weight: bold;
+}
+
+label:has(input:valid), input:valid{
+    color: green;
+}
+
+input:invalid{
+    color: red;
+}

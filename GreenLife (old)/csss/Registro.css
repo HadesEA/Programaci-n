@@ -1,0 +1,63 @@
+.Formulario{
+    /* margin-left: 36%; */
+    /* margin-top: 13%; */
+    background-color: rgb(10, 180, 60);
+    margin-right: 70%;
+    padding-left: 2%;
+    padding-right: 10px;
+    padding-bottom: 4px;
+    padding-top: 20px;
+    
+    position: relative;
+    left: 35%;
+    top: 20%;
+    border-radius: 5%;
+}
+
+#username{
+    margin-left: 3%;
+}
+
+#password{
+    margin-left: 3%;
+}
+.pass{
+    margin-top: 20px;
+}
+
+.Email{
+    margin-top: 20px;
+}
+
+#Email{
+    margin-left: 4%;
+}
+#contra{
+    margin-left: 17%;
+}
+
+#boton{
+    position: relative;
+    margin-top: 15px;
+    left: 33% ;
+}
+
+#link{
+    margin-top: -10px;
+    margin-left: 50%;
+}
+
+#link1{
+    margin-top: 5%;
+    margin-left: 62%;
+}
+
+#link:hover{
+    background: black;
+    width: 180px;
+}
+
+#link1:hover{
+    background: black;
+    width: 135px;
+}

@@ -1,0 +1,104 @@
+body {
+	background-color: rgb(23, 18, 32);
+	color:#2c2c2c;
+	font: normal 100% Georgia, serif;
+	
+	}
+    .tabulacion{
+        margin-left: 42px;
+    }
+    .Título{
+        font-weight: bold;
+        font-size: 30px;
+        margin-left: 20px;
+        margin-top: 5px;
+        margin-bottom: -10px;
+    }
+
+    .p1{
+        text-align: justify;
+        margin-left: 65px;
+        margin-right: 65px;
+        margin-bottom: -5px;
+    }
+
+    #Arriba{
+        background-color: rgba(255, 136, 136, 0.404);
+        margin: 5px;
+    }
+
+    #frutas{
+        margin: 5px;
+    }
+
+    .Titulo1{
+        font-size: 24px;
+        font-weight: bold;
+        margin-bottom: 0px;
+        margin-top: 10px;
+        /* padding-left: 105px; */
+        padding-left: 11%;
+        background-color: rgb(10,300,60);
+    }
+
+    .Datos{
+        margin-bottom: 0px;
+        margin-top: 3px;
+        /* padding-left: 145px; */
+        padding-left: 11%;
+        background-color: rgb(210,300,210);
+    }
+	.checkbtn{
+		display: none;
+	}
+	#check{
+		display: none;
+	}
+	h1 {
+		width: 100%;
+		height: 100px;
+		font-size: 15px;
+		font-style:normal;
+		background-color: black;
+	}
+	aside p {
+		font-size: 40px;
+		font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+		color: white;
+		position: absolute;
+		margin: 15px 0px;
+		left: 5%;
+	}
+	aside ul{
+		font-size: 20px;
+		color: white;
+		padding-top: 2%;
+		text-align: end;
+	}
+	li{
+		margin-left: 5px;
+	}
+	aside a{
+		color: white;
+	}
+
+	div#container {
+		width: 100%px;
+		background-color: rgb(10,180,60);
+		height: 130px;
+	}
+	
+	h1 ul a:hover, h1 ul a.active{
+		color: rgb(10,180,60);
+	}
+	nav#navegate ul, li{
+		display: inline;
+	}
+	section#contenido{
+        text-align: justify;
+		width: 100%;
+		height: 840px;
+		background-color: mintcream;
+		justify-content: center;
+		overflow: hidden;
+	}

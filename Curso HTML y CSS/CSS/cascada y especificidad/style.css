@@ -1,0 +1,14 @@
+#title{
+    color: green;
+}
+
+h1{
+    color: red;
+}
+
+.titulo{
+    color: blue;
+}
+
+
+/* Al poner el mouse en el selector se muestra la especifidad que tiene, separandolo por 3 espacios 0,0,0 entre más a la izquierda esté el valor mayor prioridad tendrá al ser específico en qué estás seleccionando por ende aquél con mayor especificidad será el que modifique al elemento seleccionado */

@@ -1,0 +1,78 @@
+<!-- Ejemplo de despliegue de pdf según la selección que hagas -->
+
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+    <meta charset='UTF-8'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+    <link rel='stylesheet' href='style.css'>
+    <title>select</title>
+    <style>
+        #option1-1-content, #option1-2-content, #option1-3-content,
+#option2-1-content, #option2-2-content, #option2-3-content {
+  display: none;
+}
+    </style>
+</head>
+<body>
+    <select id="select1">
+        <option value="none">Seleccione una opción</option>
+        <option value="option1-1">Option 1-1</option>
+        <option value="option1-2">Option 1-2</option>
+        <option value="option1-3">Option 1-3</option>
+      </select>
+      
+      <select id="select2">
+        <option value="none">Seleccione una opción</option>
+        <option value="option2-1">Option 2-1</option>
+        <option value="option2-2">Option 2-2</option>
+        <option value="option2-3">Option 2-3</option>
+      </select>
+      
+      <div id="option1-1-content"><iframe src="P1-M1.pdf" frameborder="0"></iframe></div>
+      <div id="option1-2-content"><iframe src="P1-M2.pdf" frameborder="0"></iframe></div>
+      <div id="option1-3-content"><iframe src="P1-M3.pdf" frameborder="0"></iframe></div>
+      <div id="option1-4-content"><iframe src="P1-M4.pdf" frameborder="0"></iframe></div>
+      <div id="option1-5-content"><iframe src="P1-M5.pdf" frameborder="0"></iframe></div>
+      <div id="option1-6-content"><iframe src="P1-M6.pdf" frameborder="0"></iframe></div>
+      <div id="option1-7-content"><iframe src="P1-M7.pdf" frameborder="0"></iframe></div>
+      <div id="option1-8-content"><iframe src="P1-M8.pdf" frameborder="0"></iframe></div>
+      <div id="option1-9-content"><iframe src="P1-M9.pdf" frameborder="0"></iframe></div>
+      
+      <div id="option2-1-content">Contenido de la opción 2-1</div>
+      <div id="option2-2-content">Contenido de la opción 2-2</div>
+      <div id="option2-3-content">Contenido de la opción 2-3</div>
+</body>
+<script>
+   const select1 = document.getElementById('select1');
+const select2 = document.getElementById('select2');
+
+select1.addEventListener('change', function() {
+  const selectedValue = select1.value;
+  select2.value = 'none'; // Resetea el valor del segundo select
+
+  const contentElements = document.querySelectorAll('[id$="-content"]');
+  contentElements.forEach(function(element) {
+    element.style.display = 'none';
+  });
+
+  if (selectedValue !== 'none') {
+    document.getElementById(selectedValue + '-content').style.display = 'block';
+  }
+});
+
+select2.addEventListener('change', function() {
+  const selectedValue = select2.value;
+  select1.value = 'none'; // Resetea el valor del primer select
+
+  const contentElements = document.querySelectorAll('[id$="-content"]');
+  contentElements.forEach(function(element) {
+    element.style.display = 'none';
+  });
+
+  if (selectedValue !== 'none') {
+    document.getElementById(selectedValue + '-content').style.display = 'block';
+  }
+});
+</script>
+</html>

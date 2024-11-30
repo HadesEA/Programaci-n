@@ -1,0 +1,32 @@
+body{
+    margin: 0;
+    font-family: sans-serif;
+    background-color: #ccc;
+    box-sizing: border-box;
+}
+
+.flexbox{
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    margin: 20px;
+    border: 2px solid #000;
+    gap: 20px;
+}
+
+.flex-item{
+    text-align: center;
+    color: #fff;
+    background-color: #911;
+    font-size: 40px;
+    flex: 1 1 100px;
+}
+
+
+.flex-item:nth-child(2n){
+    background-color: #d56;
+}
+
+/* .flex-item:last-child{
+    background-color: #000;
+} */

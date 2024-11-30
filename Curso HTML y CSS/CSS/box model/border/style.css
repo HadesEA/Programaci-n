@@ -1,0 +1,31 @@
+/* div {
+    background: red;
+    width: 150px;
+    margin: auto;
+    text-align: center;
+} */
+
+/* div {
+    border: 3px  solid black;
+    border-radius: 1px 50px 20px 9px;
+
+    /* border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 2px;
+    border-bottom-right-radius: 10px; 
+} */
+body{
+    background-color: black;
+}
+
+input{
+    margin: 5px;
+    padding: 6px 9px;
+    border: none;
+    color: greenyellow;
+    border-bottom: 1px solid greenyellow;
+    /* border-top: 1px solid white;
+    border-left: 1px solid white; */
+    background: transparent;
+    border-radius: 5px;
+}

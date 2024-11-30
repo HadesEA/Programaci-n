@@ -1,0 +1,35 @@
+body{
+    margin: 0;
+    font-family: sans-serif;
+    background-color: #bbb;
+}
+
+.box{
+    width: 240px;
+    height: 240px;
+    margin: auto;
+    margin-top: 50px;
+    background-color: #fff;
+    border: 1px solid #0009;
+    text-wrap: pretty;
+    
+    /* ESTO FUNCIONA CON LOS SIGUIENTES VALORES NADA MÁS */
+    /* white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis; */
+
+    white-space: normal;
+
+
+    /* break-word detecta si se va a romper una palabra y si es el caso mete un enter para evitar q se rompa */
+    /* rompe las palabras largas si se desbordan, fuerza un enter */
+    overflow-wrap: anywhere;
+
+    /* WORD-BREAK */
+    /* break-all rompe todas las palabras que se vayan a salir sin importar como corte la palabra */
+    /* keep-all evita que se rompan las palabras de manera forzada */
+}
+
+h1{
+    text-wrap:balance;
+}

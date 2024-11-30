@@ -1,0 +1,61 @@
+body{
+    background: linear-gradient(#014db3, #0058b6dd, #30add7ff, #4dadd7);
+}
+
+header{
+    height: 100px;
+    width: 100%;
+}
+
+h1{
+    top: 20px;
+    left: 30%;
+    position: fixed;
+    width:auto;
+    height: 10vh;
+    margin: 0;
+    padding: 0 15px;
+    background-color: rgba(240, 232, 232, 0.884);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    border: 1px solid #000;
+    border-radius: 15px;
+}
+
+main{
+    height: auto;
+    margin: 10px;
+    background-color: transparent;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: space-around;
+    align-items: center;
+    align-content: center;
+}
+
+
+img{
+    width: 25%;
+    height: 30%;
+    box-shadow: 1px 10px 20px 1px #000c;
+}
+
+p{
+    text-align: justify;
+    margin: 20px;
+    font-size: large;background: linear-gradient(to right, #0004, transparent);
+}
+
+footer{
+    height: 10vh;
+    margin: 10px;
+    background-color: #c5c5c5;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    align-content: center;
+}

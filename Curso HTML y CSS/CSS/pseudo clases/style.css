@@ -1,0 +1,70 @@
+h1{
+    color: #48e;
+    font-family: sans-serif;
+    margin: 30px;
+}
+/* Cuando pasamos el mouse encima de H1 */
+h1:hover{
+    color: #000;
+    background-color: #ccc;
+}
+/* Mientras se haga click en h1 */
+h1:active{
+    background-color: #c7e;
+    color: #c94;
+}
+
+ul{
+    background-color: #999;
+    padding: 0;
+}
+
+/* Selecciona y modifica al primer li */
+li:first-child{
+    color: red;
+}
+/* Selecciona un necimo elemento li, pero si hay otros elementos tomaran un espacio pero no los puedes modificar */
+li:nth-child(2n){
+    color: aqua;
+    background-color: #fff;
+    padding: 5px;
+}
+/* Selecciona solo los hermanos que tiene li */
+li:nth-of-type(2){
+    color: white;
+}
+/* Selecciona y modifica al segundo li */
+li:last-child{
+    color: blue;
+}
+/* Excluye el elemento que deseas para que no lo modifique */
+.lista li:not(.e3){
+    color: transparent;
+}
+
+div{
+    border: 2px solid black;
+}
+/* Modifica el elemento div cuando esté vacío */
+div:empty{
+    border: none;
+    background-color: green;
+    padding: 30px;
+}
+
+input[type="checkbox"]{
+    margin: 50px;
+}
+/* modifica el elemento input una vez que ha sido clickeado */
+input[type="checkbox"]:checked{
+    margin: 0;
+}
+
+/* seleccionando enlaces no visitados */
+a:link{
+    color: red;
+}
+/* seleccionando enlaces visitados */
+a:visited{
+    color: green;
+}

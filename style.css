@@ -1,0 +1,53 @@
+/* Estilos generales */
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  background-color: #f0f0f0;
+}
+
+/* Contenedor de la imagen */
+.image-container {
+  position: relative;
+  display: inline-block;
+  padding: 10px;
+}
+
+/* Estilo de la imagen */
+.image-container img {
+  width: 300px;
+  height: auto;
+  border-radius: 60%;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+/* Animación de contorno */
+.image-container::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  border-radius: 60%;
+  border: 3px solid transparent;
+  background-image: linear-gradient(45deg, #ff6b6b, #ffcc5c, #4ecdc4);
+  background-size: 300% 300%;
+  z-index: -1;
+  animation: animate-border 6s ease infinite;
+}
+
+/* Definición de la animación */
+@keyframes animate-border {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}

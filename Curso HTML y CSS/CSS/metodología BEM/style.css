@@ -1,0 +1,27 @@
+.lista{
+    border: 2px solid #000;
+}
+
+.lista__item{
+    color: grey;
+    margin: 10px 0;
+    list-style: square;
+}
+
+.item--danino{
+    color: red;
+}
+
+.item--importante{
+    color: blue;
+}
+
+.lista--vieja{
+    opacity: 0.3;
+    background-color: #ddd;
+}
+/* HAce lo mismo que arriba, solo que se está sigueindo la metodología BEM */
+/* ul:nth-of-type(2){
+    opacity: 0.3;
+    background-color: #ddd;
+} */

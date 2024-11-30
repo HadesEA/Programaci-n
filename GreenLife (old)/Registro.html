@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/x-icon" href="imgs/GreenLife-removebg-preview.png" />
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet">
+  <title>Green Life</title>
+  <link rel="stylesheet" href="csss/Registro.css">
+  <link rel="stylesheet" href="csss/Monitores.css">
+
+  <head>
+
+  <body>
+    <div id="container">
+      <header id="top">
+        <aside>
+          <div>
+            <h1 id="h1">
+              <p id="p1"><span style="color: rgb(10,180,60)">G</span>reen <span
+                  style="color: rgb(10,180,60)">L</span>ife</p>
+              <input type="checkbox" id="check">
+              <label for="check" class="checkbtn">
+                <i class="fas fa-bars"></i>
+              </label>
+              <ul>
+                <li><a href="Inicio.html" class="w3-button">Inicio</a></li>
+                <li><a href="ManualU.html" class="w3-button">Manual Usuario</a></li>
+                <li><a href="Monitores.html" class="active w3-button">Monitores</a></li>
+                <li><a href="Informacion.html" class="w3-button">Cultivos</a></li>
+                <li><a href="Contacto.html" class="w3-button">Contacto</a></li>
+              </ul>
+            </h1>
+          </div>
+        </aside>
+      </header>
+    </div>
+    <section id="contenido">
+      <!-- <div class="Formulario">
+        <form action="" method="post">
+          <div class="user">
+            <label for="username"><strong>Nombre de usuario:</strong></label>
+            <input type="text" name="username" id="username" required>
+          </div>
+          <div class="Email">
+            <label for="Email"><strong>Correo Electrónico:</strong></label>
+            <input type="email" name="email" id="Email" required>
+          </div>
+          <div class="pass">
+            <label for="password" id="contra"><strong>Contraseña:</strong></label>
+            <input type="text" name="password" id="password" required>
+          </div>
+          <button type="submit" id="boton" onclick="Registro()">Iniciar Sesión</button>
+
+          <p id="link1"><a href="Monitores.html" style="color: white;">Ya tengo un usuario</a></p>
+          <p id="link"><a href="" style="color: white;">¿Olvidaste tu constraseña?</a></p>
+        </form> -->
+
+      
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        <!-- <script type="module">
+          {/* // Import the functions you need from the SDKs you need */ }
+          import { initializeApp } from "https://www.gstatic.com/firebasejs/10.6.0/firebase-app.js";
+          import { initializeApp } from "https://www.gstatic.com/firebasejs/10.6.0/firebase-database.js";
+          import { getAnalytics } from "https://www.gstatic.com/firebasejs/10.6.0/firebase-auth.js";
+          {/* // TODO: Add SDKs for Firebase products that you want to use
+                // https://firebase.google.com/docs/web/setup#available-libraries */}
+
+          {/* // Your web app's Firebase configuration
+                // For Firebase JS SDK v7.20.0 and later, measurementId is optional */}
+          const firebaseConfig = {
+            apiKey: "AIzaSyDjxUYAaZLj2Z2pWfq9fMx10o_i8ETc35k",
+            authDomain: "mca-innovatec.firebaseapp.com",
+            databaseURL: "https://mca-innovatec-default-rtdb.firebaseio.com",
+            projectId: "greenlife-2023",
+            storageBucket: "mca-innovatec.appspot.com",
+            messagingSenderId: "513753415378",
+            appId: "AIzaSyAJt46wJI65WqJkbxH-sDG_R7YqBpjJBcw",
+            measurementId: "G-QNKC16F8XP"
+          };
+          {/* // Initialize Firebase */ }
+          firebase.initializeApp(firebaseConfig);
+
+          const auth = firebase.auth()
+          const database = firebase.database()
+
+          function Registro() {
+            Email = document.getElementById('Email').value
+            password = document.getElementById('password').value
+            username = document.getElementById('username').value
+
+            // Input para validar campos
+            if (validar_email(Email) == 'false' || validar_contra(password) == 'false') {
+              alert('Correo o contraseña inválido.')
+              return
+            }
+            if (validar_nombre(username) == 'false') {
+              alert('El nombre de usuario no es válido')
+              return
+            }
+
+            auth.createUserWithEmailAndPassword(Email, password)
+            .then(function () {
+              var user = auth.currentUser
+
+              var database_ref = database.ref()
+
+              var user_data = {
+                Email: Email,
+                password: password,
+                username: username,
+                last_login : Date.now()
+              }
+
+              database_ref.child('users/' + user.uid).set(user_data)
+
+              alert('Usuario creado')
+            })
+            .catch(function (error) {
+              var error_code = error.error_code
+              var error_message = error.message
+
+              alert(error_message)
+            })
+          }
+
+          function Login() {
+            Email = document.getElementById('Email').value
+            password = document.getElementById('password').value
+
+            // Input para validar campos
+            if (validar_email(Email) == 'false' || validar_contra(password) == 'false') {
+              alert('Correo o contraseña inválido.')
+              return
+            }
+
+            auth.SignInWithEmailAndPassword(Email, password)
+            .then(function () {
+              var user = auth.currentUser
+
+              var database_ref = database.ref()
+
+              var user_data = {
+                last_login : Date.now()
+              }
+
+              database_ref.child('users/' + user.uid).update(user_data)
+
+              alert('Haz iniciado sesión exitosamente')
+            })
+            .catch(function (error) {
+              var error_code = error.error_code
+              var error_message = error.message
+
+              alert(error_message)
+            })
+          }
+
+          function validar_email(EMail) {
+            expresion = /^[^@]+@\w+(\.\w+)+\w$/.test(str);
+            if (expresion.test(email) == true) {
+              return true
+            }
+            else {
+              return false
+            }
+          }
+
+          function validar_contra(password) {
+            if (password < 6) {
+              return false
+            }
+            else {
+              return true
+            }
+          }
+
+          function validar_nombre(username) {
+            if (field == null) {
+              return false
+            }
+            if (field.length <= 0) {
+              return false
+            }
+            else {
+              return
+            }
+          }
+        </script> -->
+
+      </div>
+    </section>
+  </body>
+</head>

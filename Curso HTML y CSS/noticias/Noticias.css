@@ -1,0 +1,89 @@
+body{
+    /* background-image: url(https://previews.123rf.com/images/korolyok/korolyok2111/korolyok211100079/177999855-fondo-de-patr%C3%B3n-de-papel-peri%C3%B3dico-envejecido-grunge-textura-de-plantilla-de-peri%C3%B3dicos-viejos.jpg); */
+    background-size: contain;
+    background-color: #4f8c;
+    height: 115vh;
+    margin: 0;
+}
+
+ol, ul{
+    list-style-type: none;
+    margin: 0px 50px 50px 0px;
+}
+
+.Titulo{
+    margin: 0 auto;
+    padding: 1px 0 0 10px;
+    line-height: 2px;
+    margin-top: 30px;
+    background: radial-gradient(transparent 60%, #5b5);
+    border-bottom: 5px solid black;
+    border-radius: 10px;
+    width: 35vw;
+    text-align: center;
+    box-sizing: border-box;
+    box-shadow: 0 12px 20px 1px #0005;
+}
+
+.fondo{
+    /* border: 10px solid #0000; */
+    /* background-color: rgb(245, 188, 142); */
+    background: linear-gradient(to top,rgb(245,188,142) 5%, #4f8);
+    border-radius: 20px;
+    width: 90vw;
+    height: auto;
+    margin: auto;
+    margin-top: 25px;
+    box-shadow: 0 0 40px 10px #484a;
+    padding-top: 1px;
+    padding-bottom: 20px;
+}
+
+.NP, .ND{
+    border: 2px solid black;
+    border-radius: 60px 1px 60px 5px;
+    /* background: radial-gradient(#4fc, #dc9 60%); */
+    font-family: "Courier New", Courier, monospace;
+    color: #373737;
+    font-weight: 700;
+    /* text-shadow: 10px 5px 30px #000; */
+    margin: 35px 90px;
+}
+
+h2{
+    border-bottom: 5px solid #000c;
+    border-radius: 9px;
+    width:fit-content ;
+}
+
+h3{
+    border-left: 3px solid #000;
+    padding-left: 10px;
+    border-radius: 8px;
+}
+
+p{
+    margin-left: 20px;
+    border-left: 4px solid #000;
+    padding-left: 12px;
+    opacity: 1;
+    transition:  0.8s;
+    padding: 10px;
+}
+
+p:hover, p:hover.flecha{
+    opacity: 1;
+    transform: translateX(-18px);
+    box-shadow: 0 0 50px 15px #fff6;
+    border-radius: 5px;
+}
+
+.parrafo{
+    border-left: 1px solid #0007;
+    transition:   .8s;
+}
+
+.parrafo:hover{
+    border-left: 0px solid #0000;
+    transition:    0.8s;
+}

@@ -1,0 +1,23 @@
+/* li{
+    color: red;
+}
+span{
+    color: blue;
+} 
+ <li><span>Harina</span></li>
+        <li>Aceita</li>
+        <li>Leche</li>
+        <li>Sal</li>
+Este ejemplo es utilizado para modificar únicamente un elemento 
+dentro de una lista, en caso de no querer modificar toda la lista completa
+*/
+li {
+    color: grey;
+}
+.faltante {
+    color: red;
+}
+
+#ingrediente-secreto {
+    color: blue;
+}

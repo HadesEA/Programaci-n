@@ -1,0 +1,13 @@
+ .box {
+    padding: 20px 50px;
+    /* background: rgba(10, 100, 10, 0.9); */
+    /* background: #f80e; */
+    background: hsla(160, 40%, 70%, 0.788);
+    margin: 20px;
+    margin-left: 100px;
+    text-align: center;
+    color: hsl(210, 40%, 45%);
+    border-top: 2px solid hsl(210, 40%, 70%);
+    font-family: sans-serif;
+    font-weight: bold;
+ }

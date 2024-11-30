@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabla Estilizada</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 20px;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        th {
+            background-color: #4CAF50; /* Verde oscuro */
+            color: white;
+            padding: 12px;
+            text-align: left;
+        }
+
+        td {
+            background-color: #ffffff; /* Blanco */
+            padding: 12px;
+            border-bottom: 1px solid #ddd; /* Línea divisoria */
+        }
+
+        tr:nth-child(even) {
+            background-color: #f2f2f2; /* Color gris claro para filas pares */
+        }
+
+        tr:hover {
+            background-color: #e0e0e0; /* Color gris oscuro al pasar el mouse */
+        }
+
+        @media (max-width: 600px) {
+            table {
+                width: 100%;
+                font-size: 14px; /* Tamaño de fuente más pequeño en pantallas pequeñas */
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <table>
+        <thead>
+            <tr>
+                <th>Característica</th>
+                <th>Sistema de monitoreo IoT (2019)</th>
+                <th>Plataforma de riego (2020)</th>
+                <th>IA para gestión de cultivos (2021)</th>
+                <th>Green Life</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Monitoreo en tiempo real</td>
+                <td>Sí</td>
+                <td>Sí</td>
+                <td>No</td>
+                <td>Sí</td>
+            </tr>
+            <tr>
+                <td>Parámetros medidos</td>
+                <td>Humedad, temperatura</td>
+                <td>Humedad, clima</td>
+                <td>Humedad del suelo, temperatura ambiente, radiación solar</td>
+                <td>pH, humedad, temperatura, gases, nivel de agua, intensidad lumínica</td>
+            </tr>
+            <tr>
+                <td>Análisis integrado</td>
+                <td>No</td>
+                <td>No</td>
+                <td>Sí</td>
+                <td>Sí</td>
+            </tr>
+            <tr>
+                <td>Recomendaciones automatizadas</td>
+                <td>No</td>
+                <td>No</td>
+                <td>Sí</td>
+                <td>Sí</td>
+            </tr>
+            <tr>
+                <td>Adaptabilidad en tiempo real</td>
+                <td>Parcial</td>
+                <td>No</td>
+                <td>No</td>
+                <td>Sí</td>
+            </tr>
+            <tr>
+                <td>Uso de IA</td>
+                <td>No</td>
+                <td>No</td>
+                <td>Sí</td>
+                <td>Sí</td>
+            </tr>
+            <tr>
+                <td>Sostenibilidad</td>
+                <td>Parcial</td>
+                <td>Sí</td>
+                <td>No</td>
+                <td>Sí</td>
+            </tr>
+        </tbody>
+    </table>
+
+</body>
+</html>

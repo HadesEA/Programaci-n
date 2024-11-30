@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/x-icon" href="imgs/GreenLife-removebg-preview.png"/>
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="csss/w3.css">
+  <title>Green Life</title>
+  
+ <link rel="stylesheet" href="csss/Monitores.css" />
+ <link rel="stylesheet" href="csss/login.css">
+ 
+</head>
+<body>
+  <div id="container">
+    <header id="top">
+    <aside>
+      <div>
+        <h1 id="h1">
+          <p id="p1"><span style="color: rgb(10,180,60)">G</span>reen <span style="color: rgb(10,180,60)">L</span>ife</p>
+          <input type="checkbox" id="check">
+          <label for="check" class="checkbtn">
+              <i class="fas fa-bars"></i>
+          </label>
+          <ul>
+            <li><a href="Inicio.html" class="w3-button">Inicio</a></li>
+            <li><a href="ManualU.html" class="w3-button">Manual Usuario</a></li>
+            <li><a href="Monitores.html" class="active w3-button">Monitores</a></li>
+            <li><a href="Informacion.html" class="w3-button">Cultivos</a></li>
+            <li><a href="Contacto.html" class="w3-button">Contacto</a></li>
+          </ul>
+        </h1>
+      </div>
+      </aside>
+    </header>
+    
+  </div> 
+  <section id="contenido">
+
+    <!-- <div class="Formulario">
+      <form action="module" method="post">
+        <div class="Email">
+          <label for="Email"><strong>Correo Electrónico:</strong></label>
+          <input type="email" name="email" id="Email" required>
+        </div>
+        <div class="pass">
+          <label for="password" id="contra"><strong>Contraseña:</strong></label>
+          <input type="text" name="password" id="password" required>
+        </div>
+        <button type="submit" id="boton" onclick="Login()">Iniciar Sesión</button>
+  
+        <p id="link1"><a href="Registro.html" style="color: white;">Crear una cuenta</a></p>
+        <p id="link"><a href="" style="color: white;">¿Olvidaste tu constraseña?</a></p>
+      </form> -->
+
+      <div>
+        <h5 class="monitores">Los rangos de calidad para el pH, la humedad y la temperatura son fundamentales en el compostaje porque influyen directamente en la eficiencia del proceso y en la calidad del compost final. Aquí hay razones específicas para la importancia de cada uno:</h5>
+        <p id="pH">pH:</p>
+        <p id="Descom"> <strong>Descomposición de materiales:</strong> Microorganismos responsables de la descomposición en el compostaje tienen preferencias de pH. Un rango de pH adecuado (generalmente entre 6 y 8) favorece la actividad de bacterias y otros microorganismos beneficiosos, acelerando la descomposición de la materia orgánica.
+          <br><strong>Prevención de malos olores:</strong> Un pH fuera de los rangos adecuados puede generar malos olores debido a la producción de compuestos volátiles no deseados. Mantener un pH equilibrado contribuye a un compostaje más eficiente y con menos problemas de olor.
+          </p>
+          <p id="Humedad">Humedad:</p>
+        <p id="Microbiana"><strong>Actividad microbiana:</strong> La humedad es esencial para la actividad microbiana en el compostaje. Si el compost está demasiado seco, los microorganismos no podrán descomponer eficientemente la materia orgánica. Si está demasiado húmedo, se reduce la disponibilidad de oxígeno, aumentando el riesgo de condiciones anaeróbicas y malos olores.
+          <br><strong>Equilibrio entre aire y agua:</strong> Mantener un equilibrio adecuado entre aire y agua es esencial para fomentar la descomposición aeróbica, que es más eficiente y produce menos olores desagradables.
+          </p>
+          <p id="temperatura">Temperatura:</p>
+          <p id="Actividad"><strong>Actividad microbiana:</strong> La temperatura influye directamente en la actividad de los microorganismos. En el compostaje, se busca alcanzar temperaturas elevadas, generalmente entre 50°C y 65°C, para favorecer la descomposición de materiales y eliminar patógenos y semillas de malas hierbas.
+            <br><strong>Control de patógenos y semillas de malas hierbas:</strong> Las altas temperaturas alcanzadas durante la fase termofílica del compostaje son cruciales para eliminar patógenos y semillas de malas hierbas, lo que resulta en un compost más seguro y libre de agentes patógenos.
+            Mantener los rangos adecuados para el pH, la humedad y la temperatura garantiza un proceso de compostaje eficiente y controlado, produciendo compost de alta calidad que puede utilizarse de manera segura y beneficiosa en la agricultura o jardinería. Además, seguir estos rangos ayuda a prevenir problemas ambientales, como la generación de lixiviados contaminantes.</p>
+        </div>
+
+
+
+
+
+
+
+
+      <script type="module">
+        // Import the functions you need from the SDKs you need
+        import { initializeApp } from "https://www.gstatic.com/firebasejs/10.6.0/firebase-app.js";
+        import { initializeApp } from "https://www.gstatic.com/firebasejs/10.6.0/firebase-auth.js";
+        import { initializeApp } from "https://www.gstatic.com/firebasejs/10.6.0/firebase-database.js";
+        // TODO: Add SDKs for Firebase products that you want to use
+        // https://firebase.google.com/docs/web/setup#available-libraries
+      
+        // Your web app's Firebase configuration
+        const firebaseConfig = {
+          apiKey: "AIzaSyAJt46wJI65WqJkbxH-sDG_R7YqBpjJBcw",
+          authDomain: "greenlife-2023.firebaseapp.com",
+          databaseURL: "https://greenlife-2023-default-rtdb.firebaseio.com",
+          projectId: "greenlife-2023",
+          storageBucket: "greenlife-2023.appspot.com",
+          messagingSenderId: "1049042995282",
+          appId: "1:1049042995282:web:424ffefacc1f2a52d4f78b"
+        };
+      
+        // Initialize Firebase
+        firebase.initializeApp(firebaseConfig);
+
+        const auth = firebase.auth()
+        const database = firebase.database();
+      </script> -->
+      
+    </div>
+  </section>
+  <script src="php/Login.js"></script>
+</body>
+</html>
+
+
+
+

@@ -1,0 +1,309 @@
+body {
+	background-color: rgb(23, 18, 32);
+	color:#2c2c2c;
+	font: normal 100% Georgia, serif;
+	margin: 0;
+}
+
+.content{
+    color: white;
+    font-size: larger;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 50px 0;
+    padding: 0;
+    text-decoration: none;
+}
+
+#correo{
+	text-decoration: none;
+}
+
+#correo:hover{
+    color: #382;
+}
+
+#desarrollado{
+    color: #fff5;
+}
+
+a[href="https://github.com/HadesEA"]:hover{
+    color:#382;
+}
+
+.checkbtn{
+	display: none;
+}
+
+#check{
+	display: none;
+}
+
+h1 {
+	width: 100%;
+	height: 100px;
+	font-size: 15px;
+	margin: 0;
+	font-style:normal;
+	background-color: black;
+}
+
+aside p {
+	font-size: 40px;
+	font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+	color: white;
+	position: absolute;
+	margin: 25px 10px 5px 10px;
+	left: 5%;
+}
+
+aside ul{
+	font-size: 20px;
+	font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+	color: white;
+	padding-top: 2%;
+	text-align: end;
+}
+
+li{
+	margin-left: 5px;
+}
+
+aside a{
+	color: white;
+}
+
+div#container {
+	width: 100%px;
+	background-color: rgb(10,180,60);
+	height: 130px;
+}
+
+/* Sí tienes complicaciones con los enlaces futuros de alguna otra página utiliza la este selector */
+li > a:hover,  a.active{
+	color: rgb(10,180,60);
+}
+
+nav#navegate ul,nav li{
+	display: inline;
+}
+
+a + .submenu  {
+	position: absolute;
+	width: 200px;
+	height: 175px;
+	background: #000e;
+	top: 85px;
+	right: -300px;
+	text-align: center;
+	line-height: 40px;
+	transition: all .2s;
+	padding: 0px;
+	opacity: 0;
+}
+
+.submenu-toggle:hover +.submenu, .submenu:hover{
+	opacity: 1;
+	right: 6%;
+	transition: all .6s;
+}
+
+.subcategoria{
+	display:flex;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	text-decoration: none;
+}
+
+.submenu > li {
+	margin: 0;
+}
+
+#contenido{
+	width: 100%;
+	height: auto;
+	background-color: mintcream;
+	display: flex;
+	flex-wrap: wrap;
+	gap: 20px;
+	justify-content: space-evenly;
+	text-align: center;
+	align-items: center;
+}
+
+section{
+	margin: 20px 15vw 20px;
+	padding: 25px;
+	border: 2px solid #0003;
+	border-radius: 5px;
+}
+
+h2{
+	border-bottom: 1px solid #0004;
+}
+
+.descrip{
+	display: flex;
+	justify-content: center;
+	gap: 0;
+}
+
+#num-prod{
+	padding-left: 12%;
+	text-align: start;
+
+}
+
+#desgen{
+	margin: 0;
+	width: 60%;
+	font-size: 1em;
+	text-align: start;
+}
+
+#gen{
+	margin: 0;
+	width: 140px;
+}
+
+img{
+	width:35vw;
+}
+
+.input-container{
+	text-align: end;
+}
+
+input{
+	background-color: #3b4;
+	border-radius: 5px;
+	padding: 5px;
+}
+
+input:hover{
+	background: radial-gradient(#3b4, #3b4b);
+	box-shadow: 0 0 12px 2px #0004;
+	padding: 6px;
+}
+
+#des{
+	text-align: start;
+	margin-left: 90px;
+}
+
+#desdes{
+	text-align: start;
+	margin: 0 90px 0;
+	font-size: 1em;
+}
+
+#ul-des{
+	padding: 0 100px 0;
+}
+
+#li-des{
+	text-align: start;
+}
+
+h3{
+	padding-top: 25px;
+	padding-bottom: 25px;
+}
+
+h4{
+	margin-top: 30px;
+	text-align: center;
+	font-size: 2em;
+}
+
+table{
+	display: flex;
+	justify-content: center;
+	border-spacing: 10px;
+	margin-bottom: 30px;
+}
+
+td, tr{
+	border-bottom: 1px solid #0004;
+	border-radius: 5px;
+	padding: 5px;
+}
+
+label{
+	text-decoration: underline;
+	color: #3b4;
+	cursor: pointer;
+}
+
+br + a{
+	color: #22f;
+}
+
+/* Ajuste para Celular */
+@media screen and (max-width: 900px) {
+	.checkbtn{
+		display: block;
+		font-size: 30px;
+		color: #fff;
+		float: right;
+		line-height: 80px;
+		margin-right: 40px;
+		cursor: pointer;
+	}
+	section .p4{
+		display: flex;
+		top: 41%;
+	}
+	section .p3{
+		top: 40%;
+	}
+	aside p{
+		left: 1%;
+	}
+	aside ul{
+		position: absolute;
+		width: 200px;
+		height: 190px;
+		background: #000e;
+		top: -20px;
+		right: -100%;
+		text-align: center;
+		transition: all .5s;
+		padding: 0px;
+	}
+	li{
+		display: block;
+		margin: 5px 0px;
+		line-height: 15px;
+	}
+	#check:checked ~ ul{
+		right: 0px;
+	}
+
+	.ul-cultivos{
+		height: 190px;
+		display: flex;
+		flex-direction: column;
+		gap: 10px;
+		justify-content: center;
+		text-align: center;
+	}
+
+	.subcategoria{
+		height: 40px;
+	}
+
+	a + .submenu{
+		top: 57%;
+		right: -250px;
+	}
+
+	.submenu-toggle:hover +.submenu, .submenu:hover{
+		opacity: 1;
+		top: 57%;
+		right: 100%;
+		transition: all .6s;
+		background-color: #000e;
+	}
+}
